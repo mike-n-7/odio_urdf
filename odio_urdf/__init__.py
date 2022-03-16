@@ -466,6 +466,10 @@ class Rolling_friction(Element):
     """Bullet3 element."""
     allowed_attributes = ['value']
 
+class Spinning_friction(Element):
+    """Bullet3 element."""
+    allowed_attributes = ['value']
+
 class Contact_cfm(Element):
     """Bullet3 element."""
     allowed_attributes = ['value']
