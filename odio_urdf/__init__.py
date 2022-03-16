@@ -444,7 +444,7 @@ class Mu1(Element): pass
 
 class Contact(Element):
     """Bullet3 element."""
-    allowed_elements = ['Stiffness', 'Damping', 'Lateral_friction', 'Rolling_friction', 'Friction_anchor', 'Contact_cfm', 'Contact_erp']
+    allowed_elements = ['Stiffness', 'Damping', 'Lateral_friction', 'Rolling_friction', 'Spinning_friction', 'Friction_anchor', 'Contact_cfm', 'Contact_erp']
 
 class Stiffness(Element):
     """Bullet3 element."""
