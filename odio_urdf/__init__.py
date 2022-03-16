@@ -444,7 +444,7 @@ class Mu1(Element): pass
 
 class Contact(Element):
     """Bullet3 element."""
-    allowed_elements = ['Stiffness', 'Damping', 'Lateral_Friction']
+    allowed_elements = ['Stiffness', 'Damping', 'Lateral_friction', 'Rolling_friction', 'Friction_anchor', 'Contact_cfm', 'Contact_erp']
 
 class Stiffness(Element):
     """Bullet3 element."""
@@ -454,7 +454,23 @@ class Damping(Element):
     """Bullet3 element."""
     allowed_attributes = ['value']
 
-class Lateral_Friction(Element):
+class Lateral_friction(Element):
+    """Bullet3 element."""
+    allowed_attributes = ['value']
+
+class Friction_anchor(Element):
+    """Bullet3 element."""
+    pass
+
+class Rolling_friction(Element):
+    """Bullet3 element."""
+    allowed_attributes = ['value']
+
+class Contact_cfm(Element):
+    """Bullet3 element."""
+    allowed_attributes = ['value']
+
+class Contact_erp(Element):
     """Bullet3 element."""
     allowed_attributes = ['value']
 
